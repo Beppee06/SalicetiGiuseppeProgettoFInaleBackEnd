@@ -1,0 +1,5 @@
+ SELECT TOP (1000) [id]
+      ,[name]
+      ,[email]
+      ,[dateOfBirth]
+  FROM [Prova].[dbo].[Customers]
