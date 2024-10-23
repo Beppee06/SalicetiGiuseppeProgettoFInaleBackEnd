@@ -95,8 +95,8 @@ namespace AppFinaleLibri.Controllers
         [SwaggerResponse(StatusCodes.Status404NotFound, null, null)]
         public async Task<IActionResult> PostOrder([FromBody] SimpleBook o)
         {
-            //try
-            //{
+            try
+            {
                 Guid Id = Guid.Parse(HttpContext.User.Identity.Name);
                 if (!(string.IsNullOrEmpty(o.Title) || string.IsNullOrEmpty(o.Author)))
                 {
@@ -106,11 +106,11 @@ namespace AppFinaleLibri.Controllers
                     return Ok("Ordine riuscito");
                 }
                 return NotFound("non tutti i campi sono stati compilati");
-            //}
-            //catch (Exception e)
-            //{
-            //    return NotFound("scemo io");
-            //}
+            }
+            catch (Exception e)
+            {
+                return NotFound("scemo io");
+            }
         }
     }
 }
