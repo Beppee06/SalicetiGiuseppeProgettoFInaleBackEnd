@@ -45,10 +45,3 @@ Questo progetto consiste in un sistema completo di gestione di una libreria onli
 - **Endpoint**: `POST /Book/PostOrder`
 - Inviare il titolo e l'autore del libro nel corpo della richiesta.
 
-## Contribuire
-
-Se desideri contribuire al progetto, apri una pull request o segnalaci eventuali problemi.
-
-## Licenza
-
-Questo progetto è concesso in licenza sotto la MIT License.
